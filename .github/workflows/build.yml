@@ -31,7 +31,7 @@ jobs:
       - name: Install Ninja and Go
         run: |
           sudo apt-get update
-          sudo apt-get install -y ninja-build golang
+          sudo apt-get install -y ninja-build golang yasm nasm
 
       - name: Create API_KEYS from secrets
         run: |
