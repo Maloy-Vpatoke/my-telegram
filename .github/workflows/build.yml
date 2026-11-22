@@ -21,11 +21,7 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      - name: Set up Android SDK
-        run: |
-    yes | sdkmanager --licenses > /dev/null || true
-    sdkmanager "platforms;android-33" "build-tools;33.0.0" "cmake;3.10.2.4988404" "ndk;21.4.7075529"
-
+   
       - name: Install SDK platform, NDK and CMake
         run: |
           yes | sdkmanager --licenses > /dev/null || true
